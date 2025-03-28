@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Banner from "./Components/Banner/Banner";
 import Nav from "./Components/Navbar/Nav";
+import Hero from "./Components/Hero/Hero";
 
 function App() {
   const [orderPopup, serOrderPopup] = useState(false)
@@ -26,6 +27,7 @@ useEffect(()=>{
     <>
      <div className="bg-white dark:bg-gray-900 dark:text-white duration-200">
       <Nav handleOrderPopup={handleOrderPopup} />
+      <Hero handleOrderPopup={handleOrderPopup} />
       <Banner />
      </div>
     </>
