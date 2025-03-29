@@ -5,6 +5,8 @@ import { useState } from "react";
 import Banner from "./Components/Banner/Banner";
 import Nav from "./Components/Navbar/Nav";
 import Hero from "./Components/Hero/Hero";
+import Products from "./Components/Products/Products";
+
 
 function App() {
   const [orderPopup, serOrderPopup] = useState(false)
@@ -29,6 +31,7 @@ useEffect(()=>{
       <Nav handleOrderPopup={handleOrderPopup} />
       <Hero handleOrderPopup={handleOrderPopup} />
       <Banner />
+      <Products />
      </div>
     </>
   )
